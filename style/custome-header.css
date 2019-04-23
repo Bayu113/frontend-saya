@@ -1,0 +1,14 @@
+.banner{
+  display: block;
+}
+
+.banner > img{
+width: 100%;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  background: none;
+}
+

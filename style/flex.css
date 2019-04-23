@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.div1,
+.div2,
+.div3 {
+  width: 10%;
+  height: 500px;
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+.div1{
+  background: red;
+  height: 62.5px;
+}
+
+.div2{
+  background: green;
+  height: 125px;
+}
+
+.div3 {
+  background : blue;
+  height: 250px;
+}
+
+.container {
+  display: flex;
+  height: 500px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+}

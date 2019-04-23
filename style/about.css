@@ -1,0 +1,144 @@
+:root {
+  --main-color: yellow;
+  --bg-collor: rgba(255,255,255,0.2)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'play', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #26de81;
+}
+
+nav {
+  padding-right: 30px;
+}
+
+.title {
+  display: block;
+  color: var(--main-color);
+  text-decoration: none;
+  padding: 15px; 30px;
+  font-size: 24px; 
+}
+
+.menu-container {
+  list-style: none;
+  display: flex;
+}
+
+.menu-container a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; 15px;
+}
+
+.menu-container a:visited {
+  color: red;
+}
+
+.menu-container li {
+  margin-right: 10px;
+}
+
+.menu-container li:last-child {
+  margin-right: 0;
+}
+
+.menu-container li:hover a {
+  color: var(--main-color);
+  background: var(--bg-collor)
+}
+
+.menu-container a.active {
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  background: var(--bg-collor)
+}
+.input:focus{
+  background: red;
+  outline: none;
+}
+
+.input:active{
+  transform: scale(4)
+}
+
+.button{
+  font-size: 18px;
+  color: white;
+  background-color: forestgreen;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 40px;
+  margin: 50px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 6px 0 0 darkgreen;
+  transition: box-shadow 0.3s,transform 0.3s;
+}
+
+.button:active{
+  box-shadow: none;
+  transform: translate(6px)
+}
+/*                                          */
+.wrapper{
+  height: 500px;
+  margin: 250px;
+  align-items: center;
+}
+
+.heading{
+  margin-left: 0;
+}
+
+.exp-wrapper{
+  padding-top: 50px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.timeline-item-wrapper{
+  display: flex;
+}
+
+.timeline-year{
+  font-weight: bold;
+  margin-right: 30px;
+  margin-top: 4px;
+}
+
+.timeline-content{
+  border-left: 5px solid black;
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+
+.timeline-circle{
+  width: 20px;
+  height: 20px;
+  border: 5px solid black;
+  border-radius: 50px;
+  margin-left: -47.5px;
+  margin-bottom: -27px;
+  background: white;
+}
+
+.timeline-content-heading{
+  font-weight: bold;
+}
+
+.timeline-item-wrapper.active .timeline-circle,
+.timeline-item-wrapper:hover .timeline-circle{
+  background: black;
+}
+
